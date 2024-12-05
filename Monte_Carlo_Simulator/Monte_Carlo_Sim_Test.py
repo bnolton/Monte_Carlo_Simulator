@@ -17,7 +17,7 @@ class TestDie(unittest.TestCase):
         coin = np.array(['H', 'T'])
         self.die = Die(coin)
         self.die.change_face_weight('H', 2)
-        self.assertEqual(self.die.die.loc[1, 'Weights'], 2)
+        self.assertEqual(self.die.loc[1, 'Weights'], 2)
 
     def test_roll_die(self):
         coin = np.array(['H', 'T'])
